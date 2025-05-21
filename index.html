@@ -1,118 +1,122 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page web</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        body {
-            background-color: white;
-            color: #000;
-        }
-    animation: fondAnime 10s ease-in-out infinite;
-}
-        .roman {
-            text-align: center;
-            border-radius: 30px;
-            margin: 20px auto;
-            max-width: 500px;
-            background: #b8daf9;
-            font-weight: bold;
-            font-size: 0.7em;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-        }
-        .contenu {
-            flex: 1;
-            padding: 30px;
-        }
-        h1, h2 {
-            text-align: center;
-            border: 2px solid #00ff1a;
-            border-radius: 30px;
-            padding: 10px;
-            margin: 20px auto;
-            max-width: 600px;
-        }
-        .banniere-bas {
-            width: 100%;
-            background: #00ff15;
-            color: rgb(197, 6, 6);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 15px 0;
-            position: fixed;
-            left: 0;
-            bottom: 0;
-        }
-        .banniere-bas button {
-            background: #00ff15;
-            color: #000000;
-            border: none;
-            border-radius: 20px;
-            margin: 0 10px;
-            padding: 10px 20px;
-            font-size: 1em;
-            cursor: pointer;
-            transition: background 0.2, color 0.2s;
-        }
-        .banniere-bas button:hover {
-            background: #000000;
-            color: rgb(255, 255, 255);
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Page web</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: #000;
+        animation: fondAnime 10s ease-in-out infinite;
     }
-    </style>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="https://apis.google.com/js/api.js"></script>
+    .roman {
+        text-align: center;
+        border-radius: 30px;
+        margin: 20px auto;
+        max-width: 500px;
+        background: #b8daf9;
+        font-weight: bold;
+        font-size: 0.7em;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .contenu {
+        flex: 1;
+        padding: 30px;
+    }
+    h1, h2 {
+        text-align: center;
+        border: 2px solid #00ff1a;
+        border-radius: 30px;
+        padding: 10px;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+    .banniere-bas {
+        width: 100%;
+        background: #00ff15;
+        color: rgb(197, 6, 6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 0;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+    }
+    .banniere-bas button {
+        background: #00ff15;
+        color: #000000;
+        border: none;
+        border-radius: 20px;
+        margin: 0 10px;
+        padding: 10px 20px;
+        font-size: 1em;
+        cursor: pointer;
+        transition: background 0.2s, color 0.2s;
+    }
+    .banniere-bas button:hover {
+        background: #000000;
+        color: rgb(255, 255, 255);
+    }
+</style>
+
+<!-- Google Identity Services -->
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<!-- Google API Client -->
+<script src="https://apis.google.com/js/api.js" async defer></script>
 </head>
 <body>
-    <div class="contenu">
-        <h1>Mon site</h1>
-        <div class="roman">
-            <h2>Fait par Roman SOUCY</h2>
-        </div>
-        <p style="text-align: center; max-width: 700px; margin: 30px auto;">
-            Bienvenue sur cette page d'exemple réalisée en HTML, CSS et JAVASCRIPT. Vous pouvez y retrouver un moyen de sauvegarde de fichier(limité a 5 MO), des liens utiles, et une bannière en bas de page pour accéder rapidement aux sites web importants.
-        </p>
-<div class="banniere-bas">
-    <button onclick="window.location.href='mailto:roman.soucy@collegedesmuriers.fr'">Contacts</button>
-    <button onclick="alert('Support non disponible pour le moment. Encore en dévelopemment 😅 ')">Support</button>
-    <button onclick="window.location.href='https://www.ecoledirecte.com/login?cameFrom=%2FAccueil'">Ecole Direct</button>
-    <button onclick="window.location.href='https://www.google.com'">Google</button>
-    <button onclick="window.location.href='https://www.lri.fr/~jacquot/progWeb/cours4/cours4.pdf'">Informations</button>
+<div class="contenu">
+    <h1>Mon site</h1>
+    <div class="roman">
+        <h2>Fait par Roman SOUCY</h2>
+    </div>
+    <p style="text-align: center; max-width: 700px; margin: 30px auto;">
+        Bienvenue sur cette page d'exemple réalisée en HTML, CSS et JAVASCRIPT. Vous pouvez y retrouver un moyen de sauvegarde de fichier(limité a 5 MO), des liens utiles, et une bannière en bas de page pour accéder rapidement aux sites web importants.
+    </p>
+
+    <div class="banniere-bas">
+        <button onclick="window.location.href='mailto:roman.soucy@collegedesmuriers.fr'">Contacts</button>
+        <button onclick="alert('Support non disponible pour le moment. Encore en dévelopement 😅 ')">Support</button>
+        <button onclick="window.location.href='https://www.ecoledirecte.com/login?cameFrom=%2FAccueil'">Ecole Direct</button>
+        <button onclick="window.location.href='https://www.google.com'">Google</button>
+        <button onclick="window.location.href='https://www.lri.fr/~jacquot/progWeb/cours4/cours4.pdf'">Informations</button>
+    </div>
+
+    <div class="bouton-ajout-image" style="text-align:center; margin: 30px 0;">
+        <label for="file-upload" style="display:inline-block; background:#00ff15; color:#000; border-radius:20px; padding:10px 20px; cursor:pointer; font-size:1em;">
+            Importer un fichier
+            <input id="file-upload" type="file" multiple style="display:none;">
+        </label>
+    </div>
+    <div id="preview-container" style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-bottom:40px;"></div>
+
+    <div style="text-align:center; margin:20px;">
+        <button id="google-login-btn" style="background:#4285F4;color:#fff;border:none;border-radius:20px;padding:10px 20px;cursor:pointer;font-size:1em;">
+            Connexion Google
+        </button>
+        <span id="google-user" style="margin-left:10px;"></span>
+    </div>
 </div>
-<div class="bouton-ajout-image" style="text-align:center; margin: 30px 0;">
-    <label for="file-upload" style="display:inline-block; background:#00ff15; color:#000; border-radius:20px; padding:10px 20px; cursor:pointer; font-size:1em;">
-        Importer un fichier
-        <input id="file-upload" type="file" multiple style="display:none;">
-    </label>
-</div>
-<div id="preview-container" style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-bottom:40px;"></div>
-<div style="text-align:center; margin:20px;">
-    <button id="google-login-btn" style="background:#4285F4;color:#fff;border:none;border-radius:20px;padding:10px 20px;cursor:pointer;font-size:1em;">
-        Connexion Google
-    </button>
-    <span id="google-user" style="margin-left:10px;"></span>
-</div>
+
 <script>
 const previewContainer = document.getElementById('preview-container');
 
-// --- Google OAuth & Drive --- //
 const CLIENT_ID = '716108448607-4d46lrnamcdkk07jo2gaq7bc9pu47ag3.apps.googleusercontent.com';
 const API_KEY = 'AIzaSyBeHW_Izkd7InzeahDl6gGxI5OMyOhiFm8';
 const SCOPES = 'https://www.googleapis.com/auth/drive.file';
+
 let tokenClient;
 let gapiInited = false;
 let gisInited = false;
 let accessToken = null;
-let googleUserEmail = null;
 
 function gapiLoaded() {
     gapi.load('client', initializeGapiClient);
@@ -129,12 +133,17 @@ function gisLoaded() {
         client_id: CLIENT_ID,
         scope: SCOPES,
         callback: (tokenResponse) => {
+            if (tokenResponse.error) {
+                alert('Erreur de connexion Google : ' + tokenResponse.error);
+                return;
+            }
             accessToken = tokenResponse.access_token;
             document.getElementById('google-user').textContent = "Connecté";
         },
     });
     gisInited = true;
 }
+
 window.gapiLoaded = gapiLoaded;
 window.gisLoaded = gisLoaded;
 
@@ -146,43 +155,42 @@ document.getElementById('google-login-btn').onclick = () => {
     tokenClient.requestAccessToken();
 };
 
-// Charger les scripts Google API
+// Load saved files from localStorage
 window.addEventListener('DOMContentLoaded', () => {
-    const script1 = document.createElement('script');
-    script1.src = "https://apis.google.com/js/api.js";
-    script1.onload = gapiLoaded;
-    document.head.appendChild(script1);
+    // Load Google APIs dynamically (redundant but sure)
+    const scriptGapi = document.createElement('script');
+    scriptGapi.src = "https://apis.google.com/js/api.js";
+    scriptGapi.onload = gapiLoaded;
+    document.head.appendChild(scriptGapi);
 
-    const script2 = document.createElement('script');
-    script2.src = "https://accounts.google.com/gsi/client";
-    script2.onload = gisLoaded;
-    document.head.appendChild(script2);
+    const scriptGis = document.createElement('script');
+    scriptGis.src = "https://accounts.google.com/gsi/client";
+    scriptGis.onload = gisLoaded;
+    document.head.appendChild(scriptGis);
 
-    // ...existing code for loading local files...
     const saved = JSON.parse(localStorage.getItem('fichiers') || '[]');
     saved.forEach(f => createPreviewBox(f.name, f.data, f.type));
 });
 
-// Fonction pour envoyer un fichier sur Google Drive
+// Convert dataURL to Blob for upload
+function dataURLtoBlob(dataurl) {
+    var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+        bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+    while(n--) u8arr[n] = bstr.charCodeAt(n);
+    return new Blob([u8arr], {type:mime});
+}
+
+// Upload file to Google Drive
 async function uploadToDrive(fileName, dataURL, fileType) {
     if (!accessToken) {
         alert("Connectez-vous à Google avant d'envoyer sur Drive.");
         return;
     }
-    // Convertir dataURL en blob
-    function dataURLtoBlob(dataurl) {
-        var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
-            bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
-        while(n--) u8arr[n] = bstr.charCodeAt(n);
-        return new Blob([u8arr], {type:mime});
-    }
     const fileBlob = dataURLtoBlob(dataURL);
-
     const metadata = {
         name: fileName,
         mimeType: fileType
     };
-
     const form = new FormData();
     form.append('metadata', new Blob([JSON.stringify(metadata)], {type: 'application/json'}));
     form.append('file', fileBlob);
@@ -199,7 +207,7 @@ async function uploadToDrive(fileName, dataURL, fileType) {
     }
 }
 
-// Fonction pour créer la boîte de prévisualisation
+// Create preview box for a file
 function createPreviewBox(fileName, dataURL, fileType) {
     const previewBox = document.createElement('div');
     previewBox.style.border = '2px solid #00ff15';
@@ -224,7 +232,7 @@ function createPreviewBox(fileName, dataURL, fileType) {
     }
     previewBox.appendChild(content);
 
-    // Bouton Télécharger
+    // Télécharger bouton
     const downloadBtn = document.createElement('a');
     downloadBtn.textContent = 'Télécharger';
     downloadBtn.href = dataURL;
@@ -241,7 +249,7 @@ function createPreviewBox(fileName, dataURL, fileType) {
     downloadBtn.style.cursor = 'pointer';
     previewBox.appendChild(downloadBtn);
 
-    // Bouton Enregistrer sur Google Drive
+    // Enregistrer sur Drive bouton
     const driveBtn = document.createElement('button');
     driveBtn.textContent = 'Enregistrer sur Drive';
     driveBtn.style.position = 'absolute';
@@ -258,7 +266,7 @@ function createPreviewBox(fileName, dataURL, fileType) {
     };
     previewBox.appendChild(driveBtn);
 
-    // Bouton Supprimer
+    // Supprimer bouton
     const removeBtn = document.createElement('button');
     removeBtn.textContent = 'Supprimer';
     removeBtn.style.position = 'absolute';
@@ -282,13 +290,7 @@ function createPreviewBox(fileName, dataURL, fileType) {
     previewContainer.appendChild(previewBox);
 }
 
-// Charger les fichiers sauvegardés au démarrage
-window.addEventListener('DOMContentLoaded', () => {
-    const saved = JSON.parse(localStorage.getItem('fichiers') || '[]');
-    saved.forEach(f => createPreviewBox(f.name, f.data, f.type));
-});
-
-// Ajouter de nouveaux fichiers et les sauvegarder
+// Ajouter et sauvegarder fichiers depuis l'input
 document.getElementById('file-upload').addEventListener('change', function(event) {
     const files = Array.from(event.target.files);
     let saved = JSON.parse(localStorage.getItem('fichiers') || '[]');
@@ -297,7 +299,6 @@ document.getElementById('file-upload').addEventListener('change', function(event
         const reader = new FileReader();
         reader.onload = function(e) {
             createPreviewBox(file.name, e.target.result, file.type);
-            // Sauvegarder dans le localStorage
             saved.push({ name: file.name, data: e.target.result, type: file.type });
             localStorage.setItem('fichiers', JSON.stringify(saved));
         };
